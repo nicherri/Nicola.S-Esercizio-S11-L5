@@ -9,9 +9,17 @@ import { environment } from '../../environments/environment.development';
 })
 export class MoviesService {
 
+  private readonly STORAGE_KEY = 'preferiti';
+
   fav: iMovies[] = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    // Carica i preferiti memorizzati in localStorage all'avvio
+    const storedFav = localStorage.getItem(this.STORAGE_KEY);
+    if (storedFav) {
+      this.fav = JSON.parse(storedFav);
+    }
+  }
 
   private mov = new Subject<iMovies[]>();
   movies$ = this.mov.asObservable();
@@ -21,7 +29,7 @@ export class MoviesService {
       .subscribe(movies => this.mov.next(movies));
   }
 
-  addMovie(movie: iMovies) {  
+  addMovie(movie: iMovies) {
     return this.http.post<iMovies>(environment.moviesUrl, movie)
       .subscribe(newMovie => {
         this.getAllMovies();
@@ -39,12 +47,16 @@ export class MoviesService {
     const movie = this.fav.find(mov => mov.id === prod.id);
     if (!movie) {
       this.fav.push(prod);
+      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.fav));
     }
   }
 
   removeFromFav(id: number) {
     const index = this.fav.findIndex(el => el.id === id);
-    this.fav.splice(index, 1);
+    if (index !== -1) {
+      this.fav.splice(index, 1);
+      localStorage.setItem(this.STORAGE_KEY, JSON.stringify(this.fav));
+    }
   }
 
   get favList() {

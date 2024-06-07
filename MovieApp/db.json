@@ -36,8 +36,13 @@
       "password": "$2a$10$cwOwkgtmhy0gTpXRlB1Sn.0vuMKzVvXd3vELm5cb0wYH5hMWJrL9u",
       "name": "mario bianco",
       "id": 6
+    },
+    {
+      "email": "AndreaDipietro@gmail.com",
+      "password": "$2a$10$fFXE1e/qAg1LzzrReSWvWO61ugo3YTcnQXdmsr6KFYaWdVM1lus5O",
+      "name": "Andrea",
+      "id": 7
     }
-
   ],
   "movies-popular": [
     {
@@ -48,15 +53,6 @@
       "duration": "2h 28min",
       "rating": 8.8,
       "ranking": 1
-    },
-    {
-      "id": 2,
-      "title": "The Shawshank Redemption",
-      "description": "Le ali della libertà (The Shawshank Redemption) è un film del 1994 scritto e diretto da Frank Darabont. Il film è tratto dal racconto Rita Hayworth e la redenzione di Shawshank incluso nella raccolta Stagioni diverse di Stephen King.",
-      "image": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
-      "duration": "2h 22min",
-      "rating": 9.3,
-      "ranking": 2
     },
     {
       "id": 3,
