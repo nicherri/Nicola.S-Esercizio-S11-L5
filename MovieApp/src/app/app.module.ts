@@ -6,8 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './main-components/header/header.component';
 import { FooterComponent } from './main-components/footer/footer.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { AuthInterceptor } from './auth/auth.interceptor';
-import { PriceComponent } from './main-components/price/price.component';
+import { AuthInterceptor } from './auth/auth.interceptor'
 
 
 
@@ -16,15 +15,13 @@ import { PriceComponent } from './main-components/price/price.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    PriceComponent,
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule
-    
+
   ],
   providers: [
     {

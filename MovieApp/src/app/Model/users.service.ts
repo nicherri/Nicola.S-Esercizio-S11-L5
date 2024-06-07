@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { iUsers } from '../interfaces/users';
-import { Subject } from 'rxjs/internal/Subject';
+import { BehaviorSubject } from 'rxjs';
 import { environment } from '../../environments/environment';
 
 @Injectable({
@@ -9,16 +9,17 @@ import { environment } from '../../environments/environment';
 })
 export class UsersService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  private user = new Subject<iUsers[]>()
-  users$ = this.user.asObservable()
+  private usersSubject = new BehaviorSubject<iUsers[]>([]);
+  users$ = this.usersSubject.asObservable();
 
-  getAllUsers(){
-    return this.http.get<iUsers[]>(environment.usersUrl)
-    .subscribe(users => this.user.next(users))
+  getAllUsers() {
+    this.http.get<iUsers[]>(environment.usersUrl)
+      .subscribe(users => this.usersSubject.next(users));
   }
 
-
-
+  getUserById(userId: number) {
+    return this.http.get<iUsers>(`${environment.usersUrl}/${userId}`);
+  }
 }

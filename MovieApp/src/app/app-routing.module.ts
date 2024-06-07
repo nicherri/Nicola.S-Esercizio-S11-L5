@@ -3,14 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { GuestGuard } from './auth/guest.guard';
 import { AuthGuard } from './auth/auth.guard';
 import { HomeComponent } from './home/home.component';
-import { PriceComponent } from './main-components/price/price.component';
 import { FavouritesComponent } from './dashboard/favourites/favourites.component';
 import { MoviesComponent } from './dashboard/movies/movies.component';
 
 const routes: Routes = [
-  { path: '', 
+  { path: '',
     component: HomeComponent
-   }, 
+   },
   { path: 'auth',
   loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
   canActivate: [GuestGuard],
@@ -22,14 +21,10 @@ const routes: Routes = [
   canActivate: [AuthGuard]
 },
 {
-  path: 'price',
-  component: PriceComponent
-},
-{
   path: '**',
   redirectTo: ''
 }
-  
+
 ];
 
 @NgModule({

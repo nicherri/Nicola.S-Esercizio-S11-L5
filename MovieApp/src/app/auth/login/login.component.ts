@@ -19,18 +19,13 @@ export class LoginComponent {
   constructor(
     private authSvc:AuthService,
     private router:Router
-    ){}
+  ){}
 
-    signIn(){
-
-      this.authSvc.login(this.loginData)
+  signIn(){
+    this.authSvc.login(this.loginData)
       .subscribe(data => {
         this.router.navigate(['/dashboard'])
       })
-console.log(this.loginData);
-
-    }
-
-
-
+    console.log(this.loginData);
+  }
 }

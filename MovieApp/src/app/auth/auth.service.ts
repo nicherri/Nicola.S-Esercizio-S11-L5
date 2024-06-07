@@ -43,13 +43,12 @@ export class AuthService {
   login(loginData:iLoginData):Observable<AccessData>{
     return this.http.post<AccessData>(this.loginUrl, loginData)
     .pipe(tap(data => {
-
       this.userSubj.next(data.user)
       localStorage.setItem('accessData', JSON.stringify(data))
-
       this.autoLogout(data.accessToken)
     }))
   }
+
 
 logout(){
   this.userSubj.next(null)
@@ -66,8 +65,8 @@ accessToken():string{
 }
 
 autoLogout(jwt:string){
-  const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date; 
-  const expMs = expDate.getTime() - new Date().getTime();  
+  const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date;
+  const expMs = expDate.getTime() - new Date().getTime();
   setTimeout(()=>{
     this.logout()
   },expMs)
