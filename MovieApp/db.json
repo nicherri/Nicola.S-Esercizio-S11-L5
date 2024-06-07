@@ -1,0 +1,944 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Mario",
+      "surname": "Rossi",
+      "email": "mario.rossi@example.com",
+      "password": "$2a$10$OPHvFM/H4v5kdvbhP/MzLuWekV.tUcOZRbUw/jSqv5CpexJRWpN3W"
+    },
+    {
+      "email": "ale.maz097@gmail.com",
+      "password": "$2a$10$WDxxUeYxfeU0q9YDbvKxVOi71xn0k6pi2CWzZTRBrkbOe8miEnbsK",
+      "name": "Alessandro",
+      "id": 2
+    },
+    {
+      "email": "m@g.c",
+      "password": "$2a$10$EHRoBpukHa.FXL95CgHFKOfQj4yjZoYsHdppC7/cKD2lH5n/u0Obm",
+      "name": "CONSOLE",
+      "id": 3
+    },
+    {
+      "email": "a@b.c",
+      "password": "$2a$10$I8ktkF9zXfn29NGQarTGzu6iJ5nPPUhOmeEscvo.Dwf.kBUcpj3ui",
+      "name": "a",
+      "id": 4
+    },
+    {
+      "email": "alb@gmail.com",
+      "password": "$2a$10$sf3jWAKKN2QQETkX4OpnKu1PyWiqDbY5L4gmAIuakPPJorDVaUKGK",
+      "name": "Alberto",
+      "id": 5
+    },
+    {
+      "email": "mariobianco@gmail.com",
+      "password": "$2a$10$cwOwkgtmhy0gTpXRlB1Sn.0vuMKzVvXd3vELm5cb0wYH5hMWJrL9u",
+      "name": "mario bianco",
+      "id": 6
+    }
+
+  ],
+  "movies-popular": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "description": "Inception è un film del 2010 scritto, diretto e prodotto da Christopher Nolan e interpretato da Leonardo DiCaprio, Tom Hardy, Cillian Murphy, Marion Cotillard, Ellen Page, Joseph Gordon-Levitt e Michael Caine.",
+      "image": "https://image.tmdb.org/t/p/w500/qmDpIHrmpJINaRKAfWQfftjCdyi.jpg",
+      "duration": "2h 28min",
+      "rating": 8.8,
+      "ranking": 1
+    },
+    {
+      "id": 2,
+      "title": "The Shawshank Redemption",
+      "description": "Le ali della libertà (The Shawshank Redemption) è un film del 1994 scritto e diretto da Frank Darabont. Il film è tratto dal racconto Rita Hayworth e la redenzione di Shawshank incluso nella raccolta Stagioni diverse di Stephen King.",
+      "image": "https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg",
+      "duration": "2h 22min",
+      "rating": 9.3,
+      "ranking": 2
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "description": "Il cavaliere oscuro (The Dark Knight) è un film del 2008 diretto da Christopher Nolan. La sceneggiatura è stata scritta da David S. Goyer e lo stesso Nolan. È il seguito di Batman Begins (2005), anch'esso diretto da Nolan.",
+      "image": "https://image.tmdb.org/t/p/w500/1hRoyzDtpgMU7Dz4JF22RANzQO7.jpg",
+      "duration": "2h 32min",
+      "rating": 9,
+      "ranking": 3
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "description": "Pulp Fiction è un film del 1994 diretto da Quentin Tarantino. Il film è conosciuto per la sua trama non lineare, che mescola diverse storie intorno a gangster, criminali e boxeur.",
+      "image": "https://image.tmdb.org/t/p/w500/dM2w364MScsjFf8pfMbaWUcWrR.jpg",
+      "duration": "2h 34min",
+      "rating": 8.9,
+      "ranking": 4
+    },
+    {
+      "id": 5,
+      "title": "Fight Club",
+      "description": "Fight Club è un film del 1999 diretto da David Fincher, basato sull'omonimo romanzo di Chuck Palahniuk. Il film è noto per i suoi temi controversi e la sua rappresentazione della disaffezione e dell'alienazione nella società moderna.",
+      "image": "https://image.tmdb.org/t/p/w500/8kNruSfhk5IoE4eZOc4UpvDn6tq.jpg",
+      "duration": "2h 19min",
+      "rating": 8.8,
+      "ranking": 5
+    },
+    {
+      "id": 6,
+      "title": "Forrest Gump",
+      "description": "Forrest Gump è un film del 1994 diretto da Robert Zemeckis e interpretato da Tom Hanks, Robin Wright Penn, Gary Sinise e Sally Field. Il film racconta le avventure di Forrest Gump, un uomo semplice che, a dispetto della sua ingenuità, riuscirà a partecipare, spesso senza rendersene conto, a alcuni tra gli eventi più significativi della storia degli Stati Uniti.",
+      "image": "https://image.tmdb.org/t/p/w500/yE5d3BUhE8hCnkMUJOo1QDoOGNz.jpg",
+      "duration": "2h 22min",
+      "rating": 8.8,
+      "ranking": 6
+    },
+    {
+      "id": 7,
+      "title": "The Matrix",
+      "description": "The Matrix è un film del 1999 scritto e diretto dai fratelli Andy e Larry Wachowski. È interpretato da Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss e Hugo Weaving.",
+      "image": "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+      "duration": "2h 16min",
+      "rating": 8.7,
+      "ranking": 7
+    },
+    {
+      "id": 8,
+      "title": "Interstellar",
+      "description": "Interstellar è un film del 2014 diretto da Christopher Nolan e interpretato da Matthew McConaughey, Anne Hathaway, Jessica Chastain e Michael Caine. Il film è incentrato sulle vicende di un gruppo di astronauti che cercano una nuova casa per l'umanità in un universo distante e in rapido deterioramento.",
+      "image": "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+      "duration": "2h 49min",
+      "rating": 8.6,
+      "ranking": 8
+    },
+    {
+      "id": 9,
+      "title": "Gladiator",
+      "description": "Gladiator è un film del 2000 diretto da Ridley Scott e interpretato da Russell Crowe, Joaquin Phoenix, Connie Nielsen e Oliver Reed. Il film è ambientato nell'antica Roma e racconta la storia di Massimo Decimo Meridio, un generale romano che viene tradito e ridotto a schiavo, ma che riesce a tornare in libertà e a vendicarsi dell'imperatore.",
+      "image": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg",
+      "duration": "2h 35min",
+      "rating": 8.5,
+      "ranking": 9
+    },
+    {
+      "id": 10,
+      "title": "The Godfather",
+      "description": "Il padrino (The Godfather) è un film del 1972 diretto da Francis Ford Coppola e interpretato da Marlon Brando, Al Pacino, James Caan, Robert Duvall e Diane Keaton. Il film è basato sul romanzo omonimo di Mario Puzo e racconta la storia della famiglia mafiosa dei Corleone, con particolare attenzione al personaggio di Michael Corleone, interpretato da Al Pacino.",
+      "image": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+      "duration": "2h 55min",
+      "rating": 9.2,
+      "ranking": 10
+    },
+    {
+      "id": 11,
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "description": "Il Signore degli Anelli - La Compagnia dell'Anello (The Lord of the Rings: The Fellowship of the Ring) è un film del 2001 diretto da Peter Jackson. È il primo capitolo della trilogia de Il Signore degli Anelli, basata sull'omonimo romanzo di J.R.R. Tolkien.",
+      "image": "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+      "duration": "2h 58min",
+      "rating": 8.8,
+      "ranking": 11
+    },
+    {
+      "id": 12,
+      "title": "The Lord of the Rings: The Two Towers",
+      "description": "Il Signore degli Anelli - Le due torri (The Lord of the Rings: The Two Towers) è un film del 2002 diretto da Peter Jackson. È il secondo capitolo della trilogia de Il Signore degli Anelli, basata sull'omonimo romanzo di J.R.R. Tolkien.",
+      "image": "https://image.tmdb.org/t/p/w500/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg",
+      "duration": "2h 59min",
+      "rating": 8.7,
+      "ranking": 12
+    },
+    {
+      "id": 13,
+      "title": "The Lord of the Rings: The Return of the King",
+      "description": "Il Signore degli Anelli - Il ritorno del re (The Lord of the Rings: The Return of the King) è un film del 2003 diretto da Peter Jackson. È il terzo capitolo della trilogia de Il Signore degli Anelli, basata sull'omonimo romanzo di J.R.R. Tolkien.",
+      "image": "https://image.tmdb.org/t/p/w500/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+      "duration": "3h 21min",
+      "rating": 8.9,
+      "ranking": 13
+    },
+    {
+      "id": 14,
+      "title": "Avatar",
+      "description": "Avatar è un film del 2009 diretto da James Cameron. Il film è ambientato nel 2154 su Pandora, una luna gigante in orbita attorno al pianeta Polifemo, dove l'umanità è impegnata in un'operazione di estrazione di un minerale prezioso, l'unobtainium.",
+      "image": "https://image.tmdb.org/t/p/w500/6EiRUJpuoeQPghrs3YNktfnqOVh.jpg",
+      "duration": "2h 42min",
+      "rating": 7.8,
+      "ranking": 14
+    },
+    {
+      "id": 15,
+      "title": "Titanic",
+      "description": "Titanic è un film del 1997 diretto da James Cameron. Il film racconta la storia d'amore tra Jack e Rose, interpretati rispettivamente da Leonardo DiCaprio e Kate Winslet, a bordo del transatlantico Titanic durante il suo viaggio inaugurale nel 1912.",
+      "image": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg",
+      "duration": "3h 15min",
+      "rating": 7.8,
+      "ranking": 15
+    },
+    {
+      "id": 16,
+      "title": "The Silence of the Lambs",
+      "description": "Il silenzio degli innocenti (The Silence of the Lambs) è un film del 1991 diretto da Jonathan Demme e interpretato da Jodie Foster e Anthony Hopkins. Il film è basato sul romanzo omonimo di Thomas Harris.",
+      "image": "https://image.tmdb.org/t/p/w500/rplLJ2hPcOQmkFhTqUte0MkEaO2.jpg",
+      "duration": "1h 58min",
+      "rating": 8.6,
+      "ranking": 16
+    },
+    {
+      "id": 17,
+      "title": "The Green Mile",
+      "description": "Il miglio verde (The Green Mile) è un film del 1999 diretto da Frank Darabont e tratto dal romanzo omonimo di Stephen King. Il film racconta la storia di Paul Edgecomb, un funzionario di una prigione che si occupa di un condannato a morte con poteri miracolosi.",
+      "image": "https://image.tmdb.org/t/p/w500/velWPhVMQeQKcxggNEU8YmIo52R.jpg",
+      "duration": "3h 9min",
+      "rating": 8.6,
+      "ranking": 17
+    },
+    {
+      "id": 18,
+      "title": "The Lion King",
+      "description": "Il re leone (The Lion King) è un film del 1994 diretto da Roger Allers e Rob Minkoff. Il film è prodotto dalla Walt Disney Feature Animation e distribuito dalla Walt Disney Pictures. Il film racconta la storia di Simba, un giovane leone destinato a diventare re della Pridelands.",
+      "image": "https://image.tmdb.org/t/p/w500/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg",
+      "duration": "1h 28min",
+      "rating": 8.5,
+      "ranking": 18
+    },
+    {
+      "id": 19,
+      "title": "Inglourious Basterds",
+      "description": "Bastardi senza gloria (Inglourious Basterds) è un film del 2009 diretto da Quentin Tarantino. Il film è ambientato durante la seconda guerra mondiale e racconta una storia di vendetta contro i nazisti.",
+      "image": "https://image.tmdb.org/t/p/w500/7sfbEnaARXDDhKm0CZ7D7uc2sbo.jpg",
+      "duration": "2h 33min",
+      "rating": 8.3,
+      "ranking": 19
+    },
+    {
+      "id": 20,
+      "title": "The Pianist",
+      "description": "Il pianista (The Pianist) è un film del 2002 diretto da Roman Polański e interpretato da Adrien Brody. Il film è basato sulle memorie omonime di Władysław Szpilman, un pianista ebreo polacco che sopravvisse all'Olocausto.",
+      "image": "https://image.tmdb.org/t/p/w500/2hFvxCCwrnKMNrR7xaC7I4z7DBg.jpg",
+      "duration": "2h 30min",
+      "rating": 8.5,
+      "ranking": 20
+    },
+    {
+      "id": 21,
+      "title": "The Departed",
+      "description": "The Departed - Il bene e il male (The Departed) è un film del 2006 diretto da Martin Scorsese e interpretato da Leonardo DiCaprio, Matt Damon, Jack Nicholson e Mark Wahlberg. Il film è un remake del film cinese Infernal Affairs.",
+      "image": "https://image.tmdb.org/t/p/w500/jyAgiqVSx5fl0NNj7WoGGKweXrL.jpg",
+      "duration": "2h 31min",
+      "rating": 8.5,
+      "ranking": 21
+    },
+    {
+      "id": 22,
+      "title": "Schindler's List",
+      "description": "La lista di Schindler (Schindler's List) è un film del 1993 diretto da Steven Spielberg e interpretato da Liam Neeson, Ben Kingsley, Ralph Fiennes e Caroline Goodall. Il film racconta la storia di Oskar Schindler, un imprenditore tedesco che salvò la vita di più di mille ebrei durante l'Olocausto.",
+      "image": "https://image.tmdb.org/t/p/w500/c8Ass7acuOe4za6DhSattE359gr.jpg",
+      "duration": "3h 15min",
+      "rating": 8.9,
+      "ranking": 22
+    },
+    {
+      "id": 23,
+      "title": "The Prestige",
+      "description": "Il prestigio (The Prestige) è un film del 2006 diretto da Christopher Nolan e interpretato da Hugh Jackman, Christian Bale, Michael Caine e Scarlett Johansson. Il film è basato sull'omonimo romanzo di Christopher Priest.",
+      "image": "https://image.tmdb.org/t/p/w500/5MXyQfz8xUP3dIFPTubhTsbFY6N.jpg",
+      "duration": "2h 10min",
+      "rating": 8.5,
+      "ranking": 23
+    },
+    {
+      "id": 24,
+      "title": "The Godfather: Part II",
+      "description": "Il padrino - Parte II (The Godfather: Part II) è un film del 1974 diretto da Francis Ford Coppola e interpretato da Al Pacino, Robert Duvall, Diane Keaton e Robert De Niro. Il film è il sequel de Il padrino del 1972 e racconta sia la storia di Michael Corleone che quella del padre Vito Corleone.",
+      "image": "https://image.tmdb.org/t/p/w500/amvmeQWheahG3StKwIE1f7jRnkZ.jpg",
+      "duration": "3h 22min",
+      "rating": 9,
+      "ranking": 24
+    },
+    {
+      "id": 25,
+      "title": "The Dark Knight Rises",
+      "description": "Il cavaliere oscuro - Il ritorno (The Dark Knight Rises) è un film del 2012 diretto da Christopher Nolan e interpretato da Christian Bale, Anne Hathaway, Tom Hardy, Gary Oldman, Joseph Gordon-Levitt e Michael Caine. È il terzo capitolo della trilogia di Batman di Nolan.",
+      "image": "https://image.tmdb.org/t/p/w500/3bgtUfKQKNi3nJsAB5URpP2wdRt.jpg",
+      "duration": "2h 45min",
+      "rating": 8.4,
+      "ranking": 25
+    },
+    {
+      "id": 26,
+      "title": "The Intouchables",
+      "description": "Intoccabili (The Intouchables) è un film del 2011 diretto da Olivier Nakache e Éric Toledano. Il film è ispirato alla storia vera di Philippe Pozzo di Borgo e del suo badante Abdel Sellou.",
+      "image": "https://image.tmdb.org/t/p/w500/4T6dVhZdG6UE5Tx5RhP5n3fT6Y0.jpg",
+      "duration": "1h 52min",
+      "rating": 8.5,
+      "ranking": 26
+    },
+    {
+      "id": 27,
+      "title": "The Wolf of Wall Street",
+      "description": "Il lupo di Wall Street (The Wolf of Wall Street) è un film del 2013 diretto da Martin Scorsese e interpretato da Leonardo DiCaprio, Jonah Hill, Margot Robbie e Matthew McConaughey. Il film è basato sulle memorie omonime di Jordan Belfort.",
+      "image": "https://image.tmdb.org/t/p/w500/pWHf4khOloNVfCxscsXFj3jj6gP.jpg",
+      "duration": "3h",
+      "rating": 8.2,
+      "ranking": 27
+    },
+    {
+      "id": 28,
+      "title": "The Sixth Sense",
+      "description": "Sesto senso (The Sixth Sense) è un film del 1999 diretto da M. Night Shyamalan e interpretato da Bruce Willis e Haley Joel Osment. Il film è noto per il suo finale a sorpresa.",
+      "image": "https://image.tmdb.org/t/p/w500/fIssD3w3SvIhPPmVo4WMgZDVLID.jpg",
+      "duration": "1h 47min",
+      "rating": 8.1,
+      "ranking": 28
+    },
+    {
+      "id": 29,
+      "title": "The Grand Budapest Hotel",
+      "description": "Grand Budapest Hotel (The Grand Budapest Hotel) è un film del 2014 diretto da Wes Anderson. Il film è una commedia drammatica che segue le avventure di Gustave H, un leggendario concierge di un famoso hotel europeo.",
+      "image": "https://image.tmdb.org/t/p/w500/8b1UygN4yn3em2WjaKB6LptsyXM.jpg",
+      "duration": "1h 39min",
+      "rating": 8.1,
+      "ranking": 29
+    },
+    {
+      "id": 30,
+      "title": "Django Unchained",
+      "description": "Django Unchained è un film del 2012 scritto e diretto da Quentin Tarantino. Il film è ambientato nel periodo pre-Guerra Civile negli Stati Uniti e segue la storia di Django, un ex schiavo che diventa un cacciatore di taglie.",
+      "image": "https://image.tmdb.org/t/p/w500/7oWY8VDWW7thTzWh3OKYRkWUlD5.jpg",
+      "duration": "2h 45min",
+      "rating": 8.4,
+      "ranking": 30
+    },
+    {
+      "id": 31,
+      "title": "The Godfather: Part II",
+      "description": "Il padrino - Parte II (The Godfather: Part II) è un film del 1974 diretto da Francis Ford Coppola e interpretato da Al Pacino, Robert Duvall, Diane Keaton e Robert De Niro.",
+      "image": "https://image.tmdb.org/t/p/w500/amvmeQWheahG3StKwIE1f7jRnkZ.jpg",
+      "duration": "3h 22min",
+      "rating": 9,
+      "ranking": 31
+    },
+    {
+      "id": 32,
+      "title": "Saving Private Ryan",
+      "description": "Salvate il soldato Ryan (Saving Private Ryan) è un film del 1998 diretto da Steven Spielberg. Il film è ambientato durante la Seconda Guerra Mondiale e racconta la missione di un gruppo di soldati per salvare un paracadutista dietro le linee nemiche.",
+      "image": "https://image.tmdb.org/t/p/w500/miDoEMlYDJhOCvxlzI0wZqBs9Yt.jpg",
+      "duration": "2h 49min",
+      "rating": 8.6,
+      "ranking": 32
+    },
+    {
+      "id": 33,
+      "title": "The Truman Show",
+      "description": "The Truman Show è un film del 1998 diretto da Peter Weir e interpretato da Jim Carrey. Il film segue la vita di Truman Burbank, un uomo la cui vita è un reality show trasmesso 24 ore su 24.",
+      "image": "https://image.tmdb.org/t/p/w500/biQEjD3uNNxPCStZ6S0EglzTT0j.jpg",
+      "duration": "1h 43min",
+      "rating": 8.1,
+      "ranking": 33
+    },
+    {
+      "id": 34,
+      "title": "The Shining",
+      "description": "Shining (The Shining) è un film del 1980 diretto da Stanley Kubrick e basato sull'omonimo romanzo di Stephen King. Il film segue la storia di Jack Torrance, un custode invernale di un hotel isolato che viene posseduto da forze soprannaturali.",
+      "image": "https://image.tmdb.org/t/p/w500/9fgh3Ns1iRzlQNYuJyK0ARQZU7w.jpg",
+      "duration": "2h 26min",
+      "rating": 8.4,
+      "ranking": 34
+    },
+    {
+      "id": 35,
+      "title": "The Social Network",
+      "description": "The Social Network è un film del 2010 diretto da David Fincher e sceneggiato da Aaron Sorkin. Il film racconta la storia della creazione di Facebook e le controversie legali che ne seguirono.",
+      "image": "https://image.tmdb.org/t/p/w500/ok5Wh8385Kgblq9MSU4VGvazeMH.jpg",
+      "duration": "2h",
+      "rating": 7.7,
+      "ranking": 35
+    },
+    {
+      "id": 36,
+      "title": "Whiplash",
+      "description": "Whiplash è un film del 2014 scritto e diretto da Damien Chazelle. Il film segue la storia di Andrew Neiman, un giovane batterista jazz che viene preso sotto l'ala di un insegnante spietato.",
+      "image": "https://image.tmdb.org/t/p/w500/oPxnRhyAIzJKGUEdSiwTJQBa6Uj.jpg",
+      "duration": "1h 47min",
+      "rating": 8.5,
+      "ranking": 36
+    },
+    {
+      "id": 37,
+      "title": "Parasite",
+      "description": "Parasite è un film del 2019 diretto da Bong Joon-ho. Il film segue la storia di una famiglia povera che si infiltra nella vita di una famiglia ricca.",
+      "image": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "duration": "2h 12min",
+      "rating": 8.6,
+      "ranking": 37
+    },
+    {
+      "id": 38,
+      "title": "The Hateful Eight",
+      "description": "The Hateful Eight è un film del 2015 scritto e diretto da Quentin Tarantino. Il film è ambientato dopo la Guerra Civile Americana e segue la storia di otto sconosciuti che si rifugiano in una locanda durante una tempesta di neve.",
+      "image": "https://image.tmdb.org/t/p/w500/nZeYqccPuARv1XthLEhFzNfXzeL.jpg",
+      "duration": "3h 7min",
+      "rating": 7.8,
+      "ranking": 38
+    },
+    {
+      "id": 39,
+      "title": "Mad Max: Fury Road",
+      "description": "Mad Max: Fury Road è un film del 2015 diretto da George Miller. Il film è ambientato in un futuro post-apocalittico e segue la storia di Max Rockatansky e Imperator Furiosa.",
+      "image": "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg",
+      "duration": "2h",
+      "rating": 8.1,
+      "ranking": 39
+    },
+    {
+      "id": 40,
+      "title": "La La Land",
+      "description": "La La Land è un film del 2016 scritto e diretto da Damien Chazelle. Il film è una commedia musicale romantica che segue la storia di un musicista jazz e un'aspirante attrice.",
+      "image": "https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg",
+      "duration": "2h 8min",
+      "rating": 8,
+      "ranking": 40
+    },
+    {
+      "id": 41,
+      "title": "The Lion King",
+      "description": "Il re leone (The Lion King) è un film del 1994 diretto da Roger Allers e Rob Minkoff. Il film è prodotto dalla Walt Disney Feature Animation e distribuito dalla Walt Disney Pictures. Il film racconta la storia di Simba, un giovane leone destinato a diventare re della Pridelands.",
+      "image": "https://image.tmdb.org/t/p/w500/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg",
+      "duration": "1h 28min",
+      "rating": 8.5,
+      "ranking": 41
+    },
+    {
+      "id": 42,
+      "title": "Blade Runner 2049",
+      "description": "Blade Runner 2049 è un film del 2017 diretto da Denis Villeneuve. È il sequel del film del 1982 Blade Runner. Il film segue la storia di un replicante chiamato K, che scopre un segreto che potrebbe destabilizzare la società.",
+      "image": "https://image.tmdb.org/t/p/w500/3WZTxpgscsmoUk81TuECXdFOD0R.jpg",
+      "duration": "2h 44min",
+      "rating": 8,
+      "ranking": 42
+    },
+    {
+      "id": 43,
+      "title": "The Revenant",
+      "description": "Revenant - Redivivo (The Revenant) è un film del 2015 diretto da Alejandro González Iñárritu. Il film è basato sulla storia vera di Hugh Glass, un cacciatore di pellicce che viene lasciato per morto dopo un attacco di un orso.",
+      "image": "https://image.tmdb.org/t/p/w500/oXUWEc5i3wYyFnL1Ycu8ppxxPvs.jpg",
+      "duration": "2h 36min",
+      "rating": 8,
+      "ranking": 43
+    },
+    {
+      "id": 44,
+      "title": "Joker",
+      "description": "Joker è un film del 2019 diretto da Todd Phillips. Il film racconta la storia delle origini del Joker, uno dei più famosi cattivi dei fumetti.",
+      "image": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+      "duration": "2h 2min",
+      "rating": 8.5,
+      "ranking": 44
+    },
+    {
+      "id": 45,
+      "title": "Black Swan",
+      "description": "Black Swan è un film del 2010 diretto da Darren Aronofsky. Il film è un thriller psicologico che segue la storia di una ballerina che si immerge nella follia mentre prepara il ruolo principale in Il lago dei cigni.",
+      "image": "https://image.tmdb.org/t/p/w500/rzL7XiPrK8AQ9HsYJAJ6rPzzEfE.jpg",
+      "duration": "1h 48min",
+      "rating": 8,
+      "ranking": 45
+    },
+    {
+      "id": 46,
+      "title": "Gravity",
+      "description": "Gravity è un film del 2013 diretto da Alfonso Cuarón. Il film è un thriller di fantascienza che segue la storia di due astronauti che rimangono bloccati nello spazio dopo che il loro shuttle viene distrutto.",
+      "image": "https://image.tmdb.org/t/p/w500/uDgy6hyPd82kOHh6I95FLtLnj6p.jpg",
+      "duration": "1h 31min",
+      "rating": 7.3,
+      "ranking": 46
+    },
+    {
+      "id": 47,
+      "title": "Her",
+      "description": "Her è un film del 2013 scritto e diretto da Spike Jonze. Il film è una storia d'amore ambientata in un futuro prossimo, dove un uomo si innamora di un sistema operativo.",
+      "image": "https://image.tmdb.org/t/p/w500/eCOt2aUMryjPCN2IzWwb9FjhRec.jpg",
+      "duration": "2h 6min",
+      "rating": 8,
+      "ranking": 47
+    },
+    {
+      "id": 48,
+      "title": "Dunkirk",
+      "description": "Dunkirk è un film del 2017 diretto da Christopher Nolan. Il film è ambientato durante la Seconda Guerra Mondiale e racconta la storia dell'evacuazione di Dunkerque.",
+      "image": "https://image.tmdb.org/t/p/w500/ebSnODDg9lbsMIaWg2uAbjn7TO5.jpg",
+      "duration": "1h 47min",
+      "rating": 7.5,
+      "ranking": 48
+    },
+    {
+      "id": 49,
+      "title": "Logan",
+      "description": "Logan - The Wolverine (Logan) è un film del 2017 diretto da James Mangold. Il film segue la storia di un anziano Wolverine che deve proteggere una giovane mutante.",
+      "image": "https://image.tmdb.org/t/p/w500/gGBu0hKw9BGddG8RkRAMX7B6NDB.jpg",
+      "duration": "2h 17min",
+      "rating": 7.7,
+      "ranking": 49
+    },
+    {
+      "id": 50,
+      "title": "The Big Lebowski",
+      "description": "Il grande Lebowski (The Big Lebowski) è un film del 1998 diretto dai fratelli Coen. Il film è una commedia che segue le avventure di un uomo chiamato 'Il Drugo'.",
+      "image": "https://image.tmdb.org/t/p/w500/5gI2mBBhlJ4XJdBvXyXnXP4Hv3I.jpg",
+      "duration": "1h 57min",
+      "rating": 8.1,
+      "ranking": 50
+    },
+    {
+      "id": 51,
+      "title": "The Shape of Water",
+      "description": "La forma dell'acqua - The Shape of Water (The Shape of Water) è un film del 2017 diretto da Guillermo del Toro. Il film è una storia d'amore fantastica ambientata durante la Guerra Fredda.",
+      "image": "https://image.tmdb.org/t/p/w500/k4FwHlMhuRR5BISY2Gm2QZHlH5Q.jpg",
+      "duration": "2h 3min",
+      "rating": 7.3,
+      "ranking": 51
+    },
+    {
+      "id": 52,
+      "title": "Inside Out",
+      "description": "Inside Out è un film del 2015 diretto da Pete Docter. Il film è una commedia d'animazione che segue la storia delle emozioni di una giovane ragazza.",
+      "image": "https://image.tmdb.org/t/p/w500/lRHE0vzf3oYJrhbsHXjIkF4Tl5A.jpg",
+      "duration": "1h 35min",
+      "rating": 8.1,
+      "ranking": 52
+    },
+    {
+      "id": 53,
+      "title": "Get Out",
+      "description": "Get Out è un film del 2017 diretto da Jordan Peele. Il film è un thriller horror che segue la storia di un giovane afroamericano che scopre un inquietante segreto nella famiglia della sua fidanzata.",
+      "image": "https://image.tmdb.org/t/p/w500/1SwAVYpuLj8KsHxllTF8Dt9dSSX.jpg",
+      "duration": "1h 44min",
+      "rating": 7.6,
+      "ranking": 53
+    },
+    {
+      "id": 54,
+      "title": "Moonlight",
+      "description": "Moonlight è un film del 2016 diretto da Barry Jenkins. Il film racconta la vita di un giovane afroamericano che cerca di trovare la sua identità e il suo posto nel mondo.",
+      "image": "https://image.tmdb.org/t/p/w500/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg",
+      "duration": "1h 51min",
+      "rating": 7.4,
+      "ranking": 54
+    },
+    {
+      "id": 55,
+      "title": "Boyhood",
+      "description": "Boyhood è un film del 2014 scritto e diretto da Richard Linklater. Il film segue la crescita di un giovane ragazzo dall'infanzia all'età adulta, filmato nell'arco di 12 anni.",
+      "image": "https://image.tmdb.org/t/p/w500/1S7uKCN3N6LgsIYa3LWKoJpGUfx.jpg",
+      "duration": "2h 45min",
+      "rating": 7.5,
+      "ranking": 55
+    },
+    {
+      "id": 56,
+      "title": "The Martian",
+      "description": "Sopravvissuto - The Martian (The Martian) è un film del 2015 diretto da Ridley Scott. Il film segue la storia di un astronauta che rimane bloccato su Marte e deve trovare un modo per sopravvivere.",
+      "image": "https://image.tmdb.org/t/p/w500/5aGhaIHYuQbqlHWvWYqMCnj40y2.jpg",
+      "duration": "2h 24min",
+      "rating": 8,
+      "ranking": 56
+    },
+    {
+      "id": 57,
+      "title": "The Great Gatsby",
+      "description": "Il grande Gatsby (The Great Gatsby) è un film del 2013 diretto da Baz Luhrmann. Il film è un adattamento del romanzo omonimo di F. Scott Fitzgerald.",
+      "image": "https://image.tmdb.org/t/p/w500/nwJbVKauPDSpDT5z9zUTcwFzX64.jpg",
+      "duration": "2h 22min",
+      "rating": 7.3,
+      "ranking": 57
+    },
+    {
+      "id": 58,
+      "title": "A Beautiful Mind",
+      "description": "A Beautiful Mind è un film del 2001 diretto da Ron Howard. Il film è una biografia del matematico John Nash, che ha lottato contro la schizofrenia.",
+      "image": "https://image.tmdb.org/t/p/w500/zwzWCmH72OSC9NA0ipoqw5Zjya8.jpg",
+      "duration": "2h 15min",
+      "rating": 7.8,
+      "ranking": 58
+    },
+    {
+      "id": 59,
+      "title": "Slumdog Millionaire",
+      "description": "The Millionaire (Slumdog Millionaire) è un film del 2008 diretto da Danny Boyle. Il film segue la storia di un giovane proveniente dalle baraccopoli di Mumbai che partecipa a un quiz televisivo.",
+      "image": "https://image.tmdb.org/t/p/w500/76cCSLUl7KjbQHZBEQEuwBiP4SJ.jpg",
+      "duration": "2h",
+      "rating": 8,
+      "ranking": 59
+    },
+    {
+      "id": 60,
+      "title": "Birdman",
+      "description": "Birdman è un film del 2014 diretto da Alejandro González Iñárritu. Il film segue la storia di un attore in declino che cerca di rilanciare la sua carriera.",
+      "image": "https://image.tmdb.org/t/p/w500/rSZs93P0LLxqlVEbI001UKoeCQC.jpg",
+      "duration": "1h 59min",
+      "rating": 7.5,
+      "ranking": 60
+    },
+    {
+      "id": 61,
+      "title": "The Imitation Game",
+      "description": "The Imitation Game è un film del 2014 diretto da Morten Tyldum. Il film è una biografia di Alan Turing, il matematico che decifrò il codice Enigma durante la Seconda Guerra Mondiale.",
+      "image": "https://image.tmdb.org/t/p/w500/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg",
+      "duration": "1h 53min",
+      "rating": 8.1,
+      "ranking": 61
+    },
+    {
+      "id": 62,
+      "title": "Les Misérables",
+      "description": "Les Misérables è un film del 2012 diretto da Tom Hooper. Il film è un adattamento del famoso musical basato sul romanzo di Victor Hugo.",
+      "image": "https://image.tmdb.org/t/p/w500/zIORGV8K5gOQLCwD8H6ar7JYZqs.jpg",
+      "duration": "2h 37min",
+      "rating": 7.4,
+      "ranking": 62
+    },
+    {
+      "id": 63,
+      "title": "The Fault in Our Stars",
+      "description": "Colpa delle stelle (The Fault in Our Stars) è un film del 2014 diretto da Josh Boone. Il film è basato sul romanzo omonimo di John Green e racconta la storia di due adolescenti malati di cancro che si innamorano.",
+      "image": "https://image.tmdb.org/t/p/w500/clmvUSrZqSz0POn6iozMDCVD2CJ.jpg",
+      "duration": "2h 6min",
+      "rating": 7.6,
+      "ranking": 63
+    },
+    {
+      "id": 64,
+      "title": "The King's Speech",
+      "description": "Il discorso del re (The King's Speech) è un film del 2010 diretto da Tom Hooper. Il film racconta la storia del re Giorgio VI e del suo terapista del linguaggio.",
+      "image": "https://image.tmdb.org/t/p/w500/fYnDpzzAXbep3qk3k9EZXnEArFw.jpg",
+      "duration": "1h 58min",
+      "rating": 7.8,
+      "ranking": 64
+    },
+    {
+      "id": 65,
+      "title": "The Theory of Everything",
+      "description": "La teoria del tutto (The Theory of Everything) è un film del 2014 diretto da James Marsh. Il film è una biografia di Stephen Hawking e racconta la sua vita e la sua lotta contro la malattia del motoneurone.",
+      "image": "https://image.tmdb.org/t/p/w500/kqYDoEb9PxLXM2ccoHInMMJalti.jpg",
+      "duration": "2h 3min",
+      "rating": 7.9,
+      "ranking": 65
+    },
+    {
+      "id": 66,
+      "title": "12 Years a Slave",
+      "description": "12 anni schiavo (12 Years a Slave) è un film del 2013 diretto da Steve McQueen. Il film racconta la storia vera di Solomon Northup, un uomo libero che viene rapito e venduto come schiavo.",
+      "image": "https://image.tmdb.org/t/p/w500/xdANQijuNrJaw1HA61rDccME4Tm.jpg",
+      "duration": "2h 14min",
+      "rating": 8.1,
+      "ranking": 66
+    },
+    {
+      "id": 67,
+      "title": "The Grand Budapest Hotel",
+      "description": "Grand Budapest Hotel (The Grand Budapest Hotel) è un film del 2014 diretto da Wes Anderson. Il film è una commedia drammatica che segue le avventure di Gustave H, un leggendario concierge di un famoso hotel europeo.",
+      "image": "https://image.tmdb.org/t/p/w500/nX5XotM9yprCKarRH4fzOq1VM1J.jpg",
+      "duration": "1h 39min",
+      "rating": 8.1,
+      "ranking": 67
+    },
+    {
+      "id": 68,
+      "title": "Django Unchained",
+      "description": "Django Unchained è un film del 2012 scritto e diretto da Quentin Tarantino. Il film è ambientato nel periodo pre-Guerra Civile negli Stati Uniti e segue la storia di Django, un ex schiavo che diventa un cacciatore di taglie.",
+      "image": "https://image.tmdb.org/t/p/w500/2oZklIzUbvZXXzIFzv7Hi68d6xf.jpg",
+      "duration": "2h 45min",
+      "rating": 8.4,
+      "ranking": 68
+    },
+    {
+      "id": 69,
+      "title": "Amélie",
+      "description": "Il favoloso mondo di Amélie (Amélie) è un film del 2001 diretto da Jean-Pierre Jeunet. Il film è una commedia romantica che segue la vita di Amélie Poulain, una giovane donna con un'immaginazione vivace.",
+      "image": "https://image.tmdb.org/t/p/w500/hgK9aI4FkY6x7AY3wYbBnW2Ew8r.jpg",
+      "duration": "2h 2min",
+      "rating": 8.3,
+      "ranking": 69
+    },
+    {
+      "id": 70,
+      "title": "The Pursuit of Happyness",
+      "description": "La ricerca della felicità (The Pursuit of Happyness) è un film del 2006 diretto da Gabriele Muccino. Il film racconta la storia vera di Chris Gardner, un uomo che lotta per superare la povertà e raggiungere il successo.",
+      "image": "https://image.tmdb.org/t/p/w500/l5AKkg3EVu8xQkKQhvh8cf5gnkn.jpg",
+      "duration": "1h 57min",
+      "rating": 8,
+      "ranking": 70
+    },
+    {
+      "id": 71,
+      "title": "Life of Pi",
+      "description": "Vita di Pi (Life of Pi) è un film del 2012 diretto da Ang Lee. Il film è basato sull'omonimo romanzo di Yann Martel e segue la storia di un giovane ragazzo che sopravvive a un naufragio con una tigre del Bengala.",
+      "image": "https://image.tmdb.org/t/p/w500/xgD24nF4pAdZgG0UNRtL3dndetU.jpg",
+      "duration": "2h 7min",
+      "rating": 7.9,
+      "ranking": 71
+    },
+    {
+      "id": 72,
+      "title": "No Country for Old Men",
+      "description": "Non è un paese per vecchi (No Country for Old Men) è un film del 2007 diretto dai fratelli Coen. Il film è basato sul romanzo omonimo di Cormac McCarthy.",
+      "image": "https://image.tmdb.org/t/p/w500/6d5XOczc226jECq0LIX0siKtgHR.jpg",
+      "duration": "2h 2min",
+      "rating": 8.1,
+      "ranking": 72
+    },
+    {
+      "id": 73,
+      "title": "Spotlight",
+      "description": "Il caso Spotlight (Spotlight) è un film del 2015 diretto da Tom McCarthy. Il film racconta la storia vera di un gruppo di giornalisti che indagano su casi di abuso sessuale all'interno della Chiesa cattolica.",
+      "image": "https://image.tmdb.org/t/p/w500/8IrCPePGnLLaKVeipYLOAevSr2O.jpg",
+      "duration": "2h 9min",
+      "rating": 7.8,
+      "ranking": 73
+    },
+    {
+      "id": 74,
+      "title": "Shutter Island",
+      "description": "Shutter Island è un film del 2010 diretto da Martin Scorsese e interpretato da Leonardo DiCaprio. Il film è un thriller psicologico basato sul romanzo omonimo di Dennis Lehane.",
+      "image": "https://image.tmdb.org/t/p/w500/kve20tXwUZpu4GUX8l6X7Z4jmL6.jpg",
+      "duration": "2h 18min",
+      "rating": 8.2,
+      "ranking": 74
+    },
+    {
+      "id": 75,
+      "title": "Gone Girl",
+      "description": "L'amore bugiardo - Gone Girl (Gone Girl) è un film del 2014 diretto da David Fincher. Il film è basato sul romanzo omonimo di Gillian Flynn.",
+      "image": "https://image.tmdb.org/t/p/w500/qymaJhucquUwjpb8oiqynMeXnID.jpg",
+      "duration": "2h 29min",
+      "rating": 7.9,
+      "ranking": 75
+    },
+    {
+      "id": 76,
+      "title": "Argo",
+      "description": "Argo è un film del 2012 diretto da Ben Affleck. Il film è basato su una storia vera e segue la missione della CIA per salvare sei americani durante la crisi degli ostaggi in Iran.",
+      "image": "https://image.tmdb.org/t/p/w500/uB0gnP9e3fhk6wOcg6mT1G43Wbq.jpg",
+      "duration": "2h",
+      "rating": 7.5,
+      "ranking": 76
+    },
+    {
+      "id": 77,
+      "title": "The Curious Case of Benjamin Button",
+      "description": "Il curioso caso di Benjamin Button (The Curious Case of Benjamin Button) è un film del 2008 diretto da David Fincher. Il film è basato su un racconto di F. Scott Fitzgerald e segue la storia di un uomo che invecchia al contrario.",
+      "image": "https://image.tmdb.org/t/p/w500/26wEWZYt6yJrwJ2C5b0ykuN8MZZ.jpg",
+      "duration": "2h 46min",
+      "rating": 7.6,
+      "ranking": 77
+    },
+    {
+      "id": 78,
+      "title": "The Aviator",
+      "description": "The Aviator è un film del 2004 diretto da Martin Scorsese. Il film è una biografia di Howard Hughes, un aviatore, regista e imprenditore eccentrico.",
+      "image": "https://image.tmdb.org/t/p/w500/8aWJWQVeY3nIVKNB8wdmQQp52bp.jpg",
+      "duration": "2h 50min",
+      "rating": 7.2,
+      "ranking": 78
+    },
+    {
+      "id": 79,
+      "title": "Jaws",
+      "description": "Lo squalo (Jaws) è un film del 1975 diretto da Steven Spielberg. Il film è un thriller che segue la storia di un grande squalo bianco che terrorizza una piccola comunità balneare.",
+      "image": "https://image.tmdb.org/t/p/w500/slkPgAt1IQgxZXNrazEcOzhAK8f.jpg",
+      "duration": "2h 4min",
+      "rating": 7.6,
+      "ranking": 79
+    },
+    {
+      "id": 80,
+      "title": "Toy Story",
+      "description": "Toy Story è un film del 1995 diretto da John Lasseter. È il primo film della serie Toy Story e il primo film d'animazione interamente realizzato al computer.",
+      "image": "https://image.tmdb.org/t/p/w500/uXDfjJbdP4ijW5hWSBrPrlKpxab.jpg",
+      "duration": "1h 21min",
+      "rating": 8.3,
+      "ranking": 80
+    },
+    {
+      "id": 81,
+      "title": "Coco",
+      "description": "Coco è un film del 2017 diretto da Lee Unkrich e Adrian Molina. Il film è una commedia d'animazione che segue la storia di un giovane ragazzo che sogna di diventare un musicista.",
+      "image": "https://image.tmdb.org/t/p/w500/eKi8dIrr8voobbaGzDpe8w0PVbC.jpg",
+      "duration": "1h 45min",
+      "rating": 8.4,
+      "ranking": 81
+    },
+    {
+      "id": 82,
+      "title": "Finding Nemo",
+      "description": "Alla ricerca di Nemo (Finding Nemo) è un film del 2003 diretto da Andrew Stanton e Lee Unkrich. Il film è una commedia d'animazione che segue la storia di un pesce pagliaccio che cerca il suo figlio perduto.",
+      "image": "https://image.tmdb.org/t/p/w500/pAbs8YMw4ly8e23jXCLtEC7T9hT.jpg",
+      "duration": "1h 40min",
+      "rating": 7.8,
+      "ranking": 82
+    },
+    {
+      "id": 83,
+      "title": "The Incredibles",
+      "description": "Gli Incredibili - Una 'normale' famiglia di supereroi (The Incredibles) è un film del 2004 diretto da Brad Bird. Il film è una commedia d'animazione che segue la storia di una famiglia di supereroi.",
+      "image": "https://image.tmdb.org/t/p/w500/2LqaLgk4Z226KkgPJuiOQ58wvrm.jpg",
+      "duration": "1h 55min",
+      "rating": 7.7,
+      "ranking": 83
+    },
+    {
+      "id": 84,
+      "title": "Up",
+      "description": "Up è un film del 2009 diretto da Pete Docter. Il film è una commedia d'animazione che segue la storia di un anziano uomo e un giovane ragazzo che partono per un'avventura in Sud America.",
+      "image": "https://image.tmdb.org/t/p/w500/8fdtg8ISU5Kl621S3mUk6wKuElo.jpg",
+      "duration": "1h 36min",
+      "rating": 8.2,
+      "ranking": 84
+    },
+    {
+      "id": 85,
+      "title": "Frozen",
+      "description": "Frozen - Il regno di ghiaccio (Frozen) è un film del 2013 diretto da Chris Buck e Jennifer Lee. Il film è una commedia d'animazione che segue la storia di due sorelle, Anna ed Elsa.",
+      "image": "https://image.tmdb.org/t/p/w500/btTdmkgIvOi0FFip1sPuZI2oQG6.jpg",
+      "duration": "1h 42min",
+      "rating": 7.3,
+      "ranking": 85
+    },
+    {
+      "id": 86,
+      "title": "Braveheart",
+      "description": "Braveheart - Cuore impavido (Braveheart) è un film del 1995 diretto e interpretato da Mel Gibson. Il film è una storia epica ambientata nel XIII secolo che segue la vita di William Wallace, un eroe scozzese.",
+      "image": "https://image.tmdb.org/t/p/w500/or1gBugydmjToAEq7OZY0owwFk.jpg",
+      "duration": "2h 57min",
+      "rating": 7.9,
+      "ranking": 86
+    },
+    {
+      "id": 87,
+      "title": "Tangled",
+      "description": "Rapunzel - L'intreccio della torre (Tangled) è un film del 2010 diretto da Nathan Greno e Byron Howard. Il film è una commedia d'animazione che segue la storia di Rapunzel, una principessa con lunghi capelli magici.",
+      "image": "https://image.tmdb.org/t/p/w500/ym7Kst6a4uodryxqbGOxmewF235.jpg",
+      "duration": "1h 40min",
+      "rating": 7.6,
+      "ranking": 87
+    },
+    {
+      "id": 88,
+      "title": "Moana",
+      "description": "Oceania (Moana) è un film del 2016 diretto da Ron Clements e John Musker. Il film è una commedia d'animazione che segue la storia di una giovane ragazza che parte per un'avventura per salvare il suo popolo.",
+      "image": "https://image.tmdb.org/t/p/w500/g7Wuw83b7VOMmSgQfhKseIayYOz.jpg",
+      "duration": "1h 47min",
+      "rating": 7.6,
+      "ranking": 88
+    },
+    {
+      "id": 89,
+      "title": "Ratatouille",
+      "description": "Ratatouille è un film del 2007 diretto da Brad Bird e Jan Pinkava. Il film è una commedia d'animazione che segue la storia di un topo che sogna di diventare un grande chef.",
+      "image": "https://image.tmdb.org/t/p/w500/9gGKxULG2nPOTWEAetfCUrX3u3K.jpg",
+      "duration": "1h 51min",
+      "rating": 8,
+      "ranking": 89
+    },
+    {
+      "id": 90,
+      "title": "The Jungle Book",
+      "description": "Il libro della giungla (The Jungle Book) è un film del 2016 diretto da Jon Favreau. Il film è un adattamento del famoso libro di Rudyard Kipling.",
+      "image": "https://image.tmdb.org/t/p/w500/tOEOlmLPxRIRFHLj5k8xTXY0dLB.jpg",
+      "duration": "1h 46min",
+      "rating": 7.3,
+      "ranking": 90
+    },
+    {
+      "id": 91,
+      "title": "Aladdin",
+      "description": "Aladdin è un film del 2019 diretto da Guy Ritchie. Il film è un adattamento del famoso film d'animazione della Disney del 1992.",
+      "image": "https://image.tmdb.org/t/p/w500/3iPqP41Q9d2JAfPJepP9M5NsUff.jpg",
+      "duration": "2h 8min",
+      "rating": 7.1,
+      "ranking": 91
+    },
+    {
+      "id": 92,
+      "title": "Maleficent",
+      "description": "Maleficent è un film del 2014 diretto da Robert Stromberg. Il film è una rivisitazione della famosa fiaba della Bella Addormentata dal punto di vista della strega Malefica.",
+      "image": "https://image.tmdb.org/t/p/w500/7RSQnZUmkIm7xtQeqbuPOjYKEgM.jpg",
+      "duration": "1h 37min",
+      "rating": 7.1,
+      "ranking": 92
+    },
+    {
+      "id": 93,
+      "title": "The Lion King (2019)",
+      "description": "Il re leone (The Lion King) è un film del 2019 diretto da Jon Favreau. Il film è un remake del famoso film d'animazione della Disney del 1994.",
+      "image": "https://image.tmdb.org/t/p/w500/2bXbqYdUdNVa8VIWXVfclP2ICtT.jpg",
+      "duration": "1h 58min",
+      "rating": 7.1,
+      "ranking": 93
+    },
+    {
+      "id": 94,
+      "title": "Zootopia",
+      "description": "Zootropolis (Zootopia) è un film del 2016 diretto da Byron Howard e Rich Moore. Il film è una commedia d'animazione che segue la storia di una giovane coniglietta che diventa la prima poliziotta della sua città.",
+      "image": "https://image.tmdb.org/t/p/w500/sM33SANp9z6rXW8Itn7NnG1GOEs.jpg",
+      "duration": "1h 48min",
+      "rating": 8,
+      "ranking": 94
+    },
+    {
+      "id": 95,
+      "title": "Big Hero 6",
+      "description": "Big Hero 6 è un film del 2014 diretto da Don Hall e Chris Williams. Il film è una commedia d'animazione che segue la storia di un giovane prodigio della robotica e del suo robot gonfiabile Baymax.",
+      "image": "https://image.tmdb.org/t/p/w500/9gLu47Zw5ertuFTZaxXOvNfy78T.jpg",
+      "duration": "1h 42min",
+      "rating": 7.8,
+      "ranking": 95
+    },
+    {
+      "id": 96,
+      "title": "Wreck-It Ralph",
+      "description": "Ralph Spaccatutto (Wreck-It Ralph) è un film del 2012 diretto da Rich Moore. Il film è una commedia d'animazione che segue la storia di un cattivo dei videogiochi che sogna di diventare un eroe.",
+      "image": "https://image.tmdb.org/t/p/w500/j8M1kHBaxRm2zYCztjRSC4j0Osd.jpg",
+      "duration": "1h 41min",
+      "rating": 7.6,
+      "ranking": 96
+    },
+    {
+      "id": 97,
+      "title": "Frozen II",
+      "description": "Frozen II - Il segreto di Arendelle (Frozen II) è un film del 2019 diretto da Chris Buck e Jennifer Lee. Il film è il sequel del film del 2013 Frozen.",
+      "image": "https://image.tmdb.org/t/p/w500/pjeMs3yqRmFL3giJy4PMXWZTTPa.jpg",
+      "duration": "1h 43min",
+      "rating": 7.3,
+      "ranking": 97
+    },
+    {
+      "id": 98,
+      "title": "The Secret Life of Pets",
+      "description": "Pets - Vita da animali (The Secret Life of Pets) è un film del 2016 diretto da Chris Renaud e Yarrow Cheney. Il film è una commedia d'animazione che segue la storia di un gruppo di animali domestici quando i loro padroni non sono a casa.",
+      "image": "https://image.tmdb.org/t/p/w500/8wVKwGSVfIl8nWT9rTZZp1Nqucd.jpg",
+      "duration": "1h 27min",
+      "rating": 6.5,
+      "ranking": 98
+    },
+    {
+      "id": 99,
+      "title": "The Secret Life of Pets 2",
+      "description": "Pets 2 - Vita da animali (The Secret Life of Pets 2) è un film del 2019 diretto da Chris Renaud e Jonathan del Val. Il film è il sequel del film del 2016 Pets - Vita da animali.",
+      "image": "https://image.tmdb.org/t/p/w500/nYcaCNkB4EgVyvrXxxbklefDrGL.jpg",
+      "duration": "1h 26min",
+      "rating": 6.6,
+      "ranking": 99
+    },
+    {
+      "id": 100,
+      "title": "Minions",
+      "description": "Minions è un film del 2015 diretto da Pierre Coffin e Kyle Balda. Il film è uno spin-off della serie di film Cattivissimo me.",
+      "image": "https://image.tmdb.org/t/p/w500/q0R4crx2SehcEEQEkYObktdeFy.jpg",
+      "duration": "1h 31min",
+      "rating": 6.4,
+      "ranking": 100
+    }
+  ]
+}

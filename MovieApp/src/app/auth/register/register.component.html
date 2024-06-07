@@ -1,0 +1,64 @@
+<div class="bg-info py-5 text-center ">
+    <div class="container w-50 ">
+        <main class="form-signin border border-dark p-3">
+            <form class="m-2">
+
+                <h1 class="h3 my-3 fw-normal">Please sign up</h1>
+                <div class="d-flex justify-content-evenly mb-3">
+                    <div class="form-floating w-25">
+                        <input type="text" class="form-control" [(ngModel)]="registerData.name"
+                        id="floatingInputName" placeholder="name" name="name">
+                        <label for="floatingInputName">Name</label>
+                    </div>
+                    <!--
+                    <div class="form-floating w-25">
+                        <input type="text" class="form-control" [(ngModel)]="registerData.surname"
+                        id="floatingInputSurname" placeholder="surname" name="surname">
+                        <label for="floatingInputSurname">Surname</label>
+                    </div>
+
+                        <div class="form-floating w-25">
+                            <input type="date" class="form-control" 
+                            id="floatingInputBirth" placeholder="Birthday">
+                            <label for="floatingInputBirth">Birthday</label>
+                        </div>
+                    -->
+                </div>
+                <div class="d-flex justify-content-evenly mb-3">
+                    
+
+                    <div class="form-floating justify-content-evenly">
+                        <input type="email" class="form-control" [(ngModel)]="registerData.email"
+                        id="floatingInputEmail" placeholder="name@example.com" name="email">
+                        <label for="floatingInputEmail">Email address</label>
+                    </div> <!-- 
+
+                        <div class="form-floating justify-content-evenly">
+                            <input type="email" class="form-control" 
+                            id="floatingInputEmailConf" placeholder="name@example.com">
+                            <label for="floatingInputEmailConf">Confirm Email</label>
+                        </div>
+                    -->
+                    </div>
+                <div class="d-flex justify-content-evenly">
+                    <div class="form-floating">
+                        <input type="password" class="form-control" [(ngModel)]="registerData.password"
+                        id="floatingPassword" placeholder="Password" name="password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <!-- 
+
+                        <div class="form-floating">
+                            <input type="password" class="form-control" id="floatingPasswordConf" placeholder="Password">
+                            <label for="floatingPasswordConf">Conferma Password</label>
+                        </div>
+                    -->
+                </div>
+                <div class="mt-4">
+                    <button class="btn btn-primary py-2" (click)="signUp()" type="submit">Sign up</button>
+                </div>
+                <p class="mt-5 mb-3 text-body-secondary">© Che Bomba movies</p>
+            </form>
+        </main>
+    </div>
+</div>

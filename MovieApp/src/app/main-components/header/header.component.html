@@ -1,0 +1,41 @@
+<div class="bg-dark py-2">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a routerLink="/dashboard" class="nav-link px-2 text-secondary" *ngIf="isUserLoggedIn">Home</a></li>
+                <li><a routerLink="/" class="nav-link px-2 text-secondary" *ngIf="!isUserLoggedIn">Home</a></li>
+                <li><a routerLink="/dashboard/favourites" class="nav-link px-2 text-white" *ngIf="isUserLoggedIn">Favourites</a></li>
+                <li><a routerLink="/price" class="nav-link px-2 text-white" *ngIf="!isUserLoggedIn">Pricing</a></li>
+                <li><a routerLink="/dashboard/movies" class="nav-link px-2 text-white" *ngIf="isUserLoggedIn">Movies</a></li>
+                <li><a routerLink="/dashboard/add-movies" class="nav-link px-2 text-white" *ngIf="isUserLoggedIn">Add Movies</a></li>
+
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark text-bg-white" placeholder="Search..."
+                    aria-label="Search">
+            </form>
+
+            <div class="text-end">
+                <button type="button" routerLink="/auth/login" class="btn btn-outline-light me-2"
+                    *ngIf="!isUserLoggedIn">Login</button>
+                <button type="button" routerLink="/auth/register" class="btn btn-warning"
+                    *ngIf="!isUserLoggedIn">Sign-up</button>
+                <div class="row" *ngIf="isUserLoggedIn">
+                    <div class="col">
+                        <div ngbDropdown class="d-inline-block">
+                            <button type="button" class="btn  btn-success btn-outline-white" id="dropdownBasic1" ngbDropdownToggle>
+                              <i class="bi bi-gear-fill"></i>
+                            </button>
+                            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button ngbDropdownItem routerLink="/dashboard/profile">Profile</button>
+                                <button ngbDropdownItem routerLink="/dashboard/favourites">Favourites</button>
+                                <button type="button" class="btn btn-danger btn-sm ms-3" (click)="logout()"
+                                    *ngIf="isUserLoggedIn">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

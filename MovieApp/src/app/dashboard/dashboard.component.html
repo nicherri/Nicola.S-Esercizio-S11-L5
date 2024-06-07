@@ -1,0 +1,50 @@
+
+<div class="container">
+    <h1>Benvenuto {{user?.name}}</h1>
+</div>
+
+<div class="container col-xxl-8 px-4 ">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="assets/img/vetrina2.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"  loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">I film più visti</h1>
+            <p class="lead">Benvenuti nel cuore palpitante de "Il Regno dei Film Epici", il santuario definitivo per gli amanti dell'avventura, dell'azione e dell'eroismo cinematografico. Qui, tra i maestosi picchi delle montagne e le profondità misteriose degli oceani, troverete una collezione senza pari di film che hanno scritto la storia del cinema.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" routerLink="/dashboard/movies" class="btn btn-primary btn-lg px-4 me-md-2">Movies</button>
+                <button type="button" routerLink="/dashboard/favourites" class="btn btn-outline-secondary btn-lg px-4">Favourites</button>
+            </div>
+        </div>
+    </div>
+</div>
+<main>
+    <div class="container my-5">
+        <span class="display-5">I Titoli più visti di Oggi</span>
+        <div class="row my-1">
+            <div class="col-6 my-2" *ngFor="let m of movies.slice(0,4)">
+                <div class="card mb-3 h-100 ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img [src]="m.image" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{m.title}}</h5>
+                                <p class="card-text">{{m.description}}</p>
+                                <p class="card-text">Duration {{m.duration}}</p>
+                                <p class="card-text"><small class="text-body-secondary">Rating {{m.rating}} <svg
+                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow"
+                                            class="bi bi-star-fill pb-1" viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                        </svg></small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
